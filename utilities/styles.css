@@ -1,0 +1,1047 @@
+@charset "utf-8";
+
+/*
+   Author:  Barbara Emke	 
+   Date:     November 19, 2022
+   
+   Filename: grid_cards.css
+   
+   This file contains the flex styles used in the Swirl Cafe & Games
+   Home page.
+
+*/
+
+
+/* ================
+   Base Styles
+   ================
+*/
+
+article, aside, figcaption, figure,
+footer, header, main, nav, section, body { 
+   display: block;
+}
+
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, nav a, ol, p, section, span, ul {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   color: rgb(49, 49, 49);
+   vertical-align: baseline;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+
+body {
+	
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/* ================
+   page Styles
+   ================
+*/
+
+html {
+	background-color: rgb(240, 240, 240);
+	
+}
+
+body.admin_body, footer.admin_footer {
+	min-width: 800;
+}
+
+main {
+	flex: 1;
+}
+
+/* ================
+   Header Styles
+   ================
+*/
+header {
+	clear: both;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: rgb(231, 233, 233);
+}
+div#logo{
+	width: 60%;
+	max-width: 600px;
+	padding: 15px;
+}
+
+img{
+	width: 100%;
+}
+
+/* ================
+   Body Styles
+   ================
+*/
+
+body{
+	max-width: 1200px;
+	width: 100%;
+	margin: auto;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+	background-color: white;
+}
+
+div#options{
+	display:flex;
+}
+
+div#reviews_option{
+	background-color: rgb(180, 180, 180);
+}
+
+div#resources_option{
+	background-color: rgb(110, 110, 110);
+}
+div#resources_option p{
+	color: rgb(220, 220, 220);
+}
+
+div.options{
+	width: 50%;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	
+}
+
+div.divider {
+	display: block;
+	padding-top: 35px;
+}
+
+div#business_search{
+	padding-bottom:50px;
+	padding-top: 80px;
+	height: 700px;
+	background-color: rgb(245, 245, 245);
+}
+
+div.search_bar{
+	padding-top: 15px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+div.search_bar input{
+	width: 220px;
+}
+
+div.search_bar Button{
+	padding: 10px;
+	border-radius: 0px;
+	border-width: 1px;
+	background-color: rgb(160, 160, 160);
+	color: rgb(250, 250, 250);
+}
+
+div#resource_bar{
+	display: flex;
+	justify-content: space-around;
+	background-color: rgb(208, 210, 210);
+	padding: 10px;
+}
+
+div#resource_bar h1{
+	text-align: left;
+	width: 40%;
+}
+
+p.option_text {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 0.05em;
+}
+
+div.column1-3, div.column2-3 {
+	width: 100%;
+	padding: 10px;
+}
+
+div#business_info {
+	border: 1px solid rgb(120, 120, 120);
+	padding: 10px;
+	background-color: rgb(230, 230, 230);
+	margin-bottom: 20px;
+}
+
+div#business_info h3{
+	width: 100%;
+	text-align: left;
+	padding-left: 10px;
+}
+
+div.column1-3 button {
+	margin: auto;
+	margin-bottom:50px;
+}
+
+div#filter_options  {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	float: left;
+	justify-content: space-around;
+}
+
+div#filter_options div{
+	width: 50%;
+	justify-content: center;
+	float: left;
+	padding: 15px;
+}
+
+div#filter_options div#selection {
+	padding:15px;
+	padding-top: 20px;
+}
+
+div#filter_options div.search_bar button{
+	padding: 5;
+}
+
+div#business_info p {
+	font-size: 1.1em;
+	word-wrap: break-word;
+	
+}
+
+h1 {
+	font-family: "Times New Roman", Georgia, serif;
+	font-size: 2em;
+	clear: both;
+	width: 100%;
+	text-align: center;
+	background-color: rgb(208, 210, 210);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+h2{
+	font-family: "Times New Roman", Georgia, serif;
+	font-size: 1.5em;
+	clear: both;
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+h3 {
+	font-family: calibri, Helvetica, sans-serif;
+	font-size: 1.4em;
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+h3#contact_thank {
+	padding: 70px 20px;
+}
+
+p{
+	font-family: calibri, Helvetica, sans-serif;
+	display: block;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	width: 80%;
+	margin: auto;
+	padding-bottom: 35px;
+	
+}
+
+p.about {
+	text-indent: 30px;
+}
+
+button{
+	font-family: calibri, Helvetica, sans-serif;
+	display: block;
+	font-size: 1.1em;
+	padding:15px;
+	border: 2px solid rgb(130, 130, 130);
+	border-radius: 7px;
+	background-color: rgb(240, 240 ,240);
+}
+
+button:hover, button:active{
+	background-color: rgb(210, 210 ,210);
+}
+
+button.option_button{
+	display:block;
+	position: relative;
+	top: 0px;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	
+}
+
+/* ================
+   Error Styles
+   ================
+*/
+
+p.error {
+	color: red;
+}
+
+/* ================
+   Admin Styles
+   ================
+*/
+
+h3.admin_menu {
+	text-align: left;
+	padding-left: 15px;
+	text-decoration: underline;
+}
+
+p.admin_option, p.admin_option a {
+	text-align: left;
+	color: black;
+	margin: 0px;
+	padding-left: 15px;
+	padding-bottom: 5px;
+	font-size: 1em;
+}
+
+h2.admin_heading {
+	padding-bottom: 20px;
+}
+
+input#adminBtn {
+	display: block;
+	padding: 10px;
+	margin:auto;
+}
+
+/* ================
+   Table Styles
+   ================
+*/
+table {
+	width: 92%;
+	margin-right: 4%;
+	margin-left: 4%;
+	text-align: left;
+	padding-right: 10px;
+	border-collapse: collapse;
+}
+
+td.open {
+	word-wrap: break-word;
+}
+
+table tr:not(:last-child) {
+  border-bottom: 1px solid #bababa;
+}
+
+td {
+  padding: 10px;
+}
+
+/* ================
+   Navigation Styles
+   ================
+*/
+
+nav.horizontal ul {
+   list-style: none;
+   list-style-image: none;
+}
+
+nav.horizontal a {
+	display: block;
+   text-decoration: none;
+   font-size: 1.4em;
+   padding: 20px;
+   width: 100%;
+   font-family: Arial, sans-serif;
+   font-weight: bold;
+}
+
+nav.horizontal a:hover, nav.horizontal a:active {
+   background-color: rgb(165, 165, 165);
+   color: white;
+}
+
+p a {
+	font-size: 1em;
+	text-decoration: none;
+	word-wrap:normal;
+	color: black;
+	padding: 5px;
+}
+p#sign-in {
+	float: right;
+	color: black;
+	font-size: 1em;
+	text-decoration: none;
+	word-wrap:normal;
+	padding: 5px;
+}
+
+/* =========================
+   Profile Styles
+   =========================
+*/
+div#profile_bar{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+
+div#profile_bar div {
+	float: left;
+}
+
+img#profile {
+	width: 200px;
+	height: 200px;
+	max-width:none;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	
+}
+
+form.profile_form {
+	margin:auto;
+	width:fit-content;
+}
+
+input.profile_form_btn {
+	padding: 10px;
+	margin-top: 10px;
+}
+
+input.image_form{
+	display:block;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+div#user_info {
+	padding-bottom: 60px;
+	width: fit-content;
+	white-space: nowrap;
+}
+
+p.users_info {
+	padding: 0px;
+}
+
+p#users_name {
+	font-size: 1.6em;
+	font-weight:bolder;
+	padding: 0px;
+}
+
+
+
+/* =========================
+   Resource & Review Styles
+   =========================
+*/
+
+div.resources, div.reviews {
+	clear:both;
+}
+
+div.resource, div.review {
+	clear: both;
+	width: 100%;
+	max-width: 800px;
+	margin: auto;
+	border: 1px solid gray;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
+
+div.user-info{
+	width: 20%;
+	float: left;
+}
+
+div.profile{
+	width: 40%;
+	padding-right: 15px;
+	padding-top: 15px;
+	float: right;
+}
+
+div.profile img{
+	width: 60px;
+	height: 60px;
+	float: right;
+}
+
+div.profile p{
+	width: auto;
+	display: block;
+	font-weight: normal;
+	padding-bottom: 0px;
+	padding-right: 80px;
+	text-align: right;
+}
+
+div.profile p.info{
+	font-size: 0.9em;
+}
+
+div.content {
+	width: 80%;
+	float: left;
+}
+
+div.spacer{
+	clear: both;
+	display: block;
+}
+
+div.heading{
+	float:left;
+	width: 60%;
+	justify-content: space-between;
+}
+
+img.user-image{
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: auto;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 1px solid rgb(168, 167, 167);
+	background-color: rgb(240, 240, 240);
+}
+p.name{
+	text-align: center;
+	font-weight: bolder;
+	text-decoration: italic;
+}
+
+p.tags{
+	font-size: 1em;
+	margin-left: 30px;
+	
+}
+
+p.date {
+	font-size: 1em;
+	float: left;
+	width: 40%;
+	text-align: right;
+	padding-right: 10px;
+	padding-bottom: 5px;
+}
+
+p.delete {
+	font-size: 1em;
+	float: left;
+	text-decoration: underline;
+	width: 40%;
+	text-align: right;
+	padding-right: 10px;
+	color: rgb(218, 47, 47);
+}
+
+p.delete a {
+	color: rgb(218, 47, 47);
+}
+
+p.back, p.back a {
+	text-decoration: underline;
+	color: rgb(120, 120, 120);
+}
+
+img.type{
+	clear: both;
+	float: left;
+	width: 30px;
+	padding-top: 15px;
+	margin-left: 10px;
+	padding-right: 10px;
+}
+
+div.group{
+	clear:both;
+	display: block;
+}
+
+div.reviews p.description {
+	float: left;
+	font-size: 1.1em;
+	word-wrap: break-word;
+	padding-left: 10px;
+}
+
+div.resource p.description{
+	display: block;
+	clear: both;
+	font-size: 1.1em;
+	margin-left: 30px;
+	word-wrap: break-word;
+	padding-left: 10px;
+}
+
+h4.title {
+	font-size: 1.3em;
+	margin-left: 30px;
+	
+}
+
+div#no-results{
+	display: none;
+	width: 100%;
+	height: 700px;
+	text-align: center;
+}
+
+div#no-results h3 {
+	padding-top: 150px;
+}
+
+
+
+/* ================
+   Form Styles
+   ================
+*/
+
+div#register_form {
+	min-width: 350px;
+}
+
+p.link {
+	text-decoration: underline;
+	text-align: center;
+}
+
+div.form_popup {
+	display: none;
+	background-color: white;
+	border: 1px solid rgb(130, 130, 130);
+	position: fixed;
+	top: 15px;
+	padding-top: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	box-shadow: 1px 1px 6px 1px gray, -1px -1px 6px 1px gray;
+}
+
+div.form_popup h3 {
+	text-align: left;
+}
+
+div.form_popup p {
+	width: 100%;
+	padding-bottom: 0px;
+}
+
+/* When the inputs get focus, do something */
+.form-container input:focus, .form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+div.field, form#contact label {
+	clear: both;
+	display: block;
+	padding: 15px 0px;
+}
+
+div.mult_group {
+	margin-top: 30px;
+}
+
+div.mult_select {
+	width: 40%;
+	min-width: 300px;
+	display: block;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+div.btns {
+	display: flex;
+	justify-content: space-around;
+	padding: 10%;
+	
+}
+
+div.btns button {
+	width: 20%;
+	min-width: 100px;
+}
+
+button.logout-btn{
+	padding: 1px 5px 1px 5px;
+	border-radius: 0px;
+	font-size: 0.9em;
+	float: right;
+	background-color: ghostwhite;
+}
+
+div.text form{
+	float: right;
+	padding-right: 20px;
+}
+
+div.column1-2 {
+	width: 100%;
+}
+
+textarea {
+	width: 100%;
+	margin: auto;
+}
+
+img.icon {
+	width: 20px;
+}
+
+input[type="radio"] {
+	margin-top: 30px;
+}
+
+form#contact {
+	padding: 10px;
+	display: block;
+}
+
+form#contact button{
+	margin: auto;
+	margin-top: 15px;
+	width: 20%;
+	min-width: 100px;
+}
+
+label p {
+	margin:0px;
+}
+
+form.edit_user {
+	width: 100%;
+	margin: auto;
+}
+
+div.edit_form {
+	border: 1px solid #bababa;
+	width: 400px;
+	margin: auto;
+	padding: 10px;
+	margin-bottom: 15px;
+	margin-top: 20px;
+}
+
+form.edit_user label.label {
+	clear: both;
+	float: left;
+	width: 150px;
+	display: block;
+	padding-bottom: 20px;
+}
+
+form.edit_user .value {
+	float: left;
+}
+
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* ================
+   Map Styles
+   ================
+*/
+
+img#mapImage {
+	border: 1px solid gray;
+}
+
+
+
+/* ================
+   Footer Styles
+   ================
+*/
+
+footer{
+	clear: both;
+	padding-top: 15px;
+	padding-left: 30px;
+	padding-bottom: 15px;
+	background-color: rgb(231, 233, 233);
+}
+
+footer p{
+	width: 100%;
+	padding-bottom: 0px;
+}
+
+/* ============================================
+   Desktop Styles: 800px and greater 
+   ============================================
+*/
+@media only screen and (min-width:800px) {
+	nav.horizontal{
+		display: flex;
+  		justify-content: center;
+  		align-items: center;
+		clear:both;
+		width: 100%;
+		margin: auto;
+		
+	}
+	
+	ul.mainmenu > li {
+		float:left;
+		position:relative;
+		text-align: center;
+		margin: auto;
+	}
+
+
+	div.column1-3 {
+		float: left;
+		width: 30%;
+	}
+
+	div.column2-3 {
+		float: left;
+		width: 70%;
+	}
+
+	div.column1-2 {
+		float: left;
+		width: 50%;
+	}
+	div.form_popup {
+		display: none;
+		max-width: 800px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		
+	}
+
+	div#login_form {
+		display: none;
+		max-width: 400px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	
+	div#radio {
+		padding-top:50px;
+		padding-bottom:15px;
+	}
+	
+	form#contact {
+		padding: 10px 100px;
+		display: block;
+	}
+}
+
+/* ============================================
+   Tablet and Desktop Styles: 481px - 799px 
+   ============================================
+*/
+@media only screen and (min-width: 481px) and (max-width: 799px)  {
+	nav.horizontal{
+		display: flex;
+  		justify-content: center;
+  		align-items: center;
+		clear:both;
+		width: 100%;
+		margin: auto;
+		
+	}
+	
+	ul.mainmenu > li {
+		float:left;
+		position:relative;
+		text-align: center;
+		margin: auto;
+	}
+	
+	ul.mainmenu {
+		clear: both;
+	}
+
+	div.column1-3 {
+		float: left;
+		width: 40%;
+	}
+
+	div.column2-3 {
+		float: left;
+		width: 60%;
+	}
+
+	div.column1-2 {
+		float: left;
+		width: 50%;
+	}
+
+	div.form_popup {
+		width: 480px;
+		top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+
+	div#login_form {
+		display: none;
+		max-width: 400px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	
+	div#radio {
+		padding-top:0px;
+	}
+	
+	div.options{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	
+	form#contact {
+		padding: 10px 50px;
+		display: block;
+	}
+	div#filter_options{
+		justify-content: space-between;
+	}
+	
+	div#filter_options div{
+		width: 300px;
+		float: left;
+		padding: 15px;
+	}
+}
+
+
+
+/* =========================
+   Mobile Styles: 0 to 480px 
+   =========================
+*/
+
+@media only screen and (max-width: 480px) {
+	
+	div#logo{
+		width: 100%;
+	}
+	
+	nav.horizontal{
+		width: 100%;
+	}
+	
+	nav.horizontal a {
+		font-size:1.3em;
+		line-height:2em;
+		padding-left: 20px;
+	}
+	
+	ul.mainmenu > li {
+		width: 100%;
+		display: block;
+		border-top: 1px solid black;
+	
+	}
+	
+	div#radio {
+		padding-top:0px;
+	}
+	
+	div#options{
+		display:block;
+	}
+	
+	div.options{
+		width: 100%;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	
+	div#filter_options{
+		display: block;
+	}
+	
+	div#filter_options div{
+		width: 100%;
+		justify-content: center;
+		margin: auto;
+		padding: 15px;
+	}
+	
+	div.btns{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	div.profile{
+		width: 100%;
+		padding-top: 0px;
+		padding-right: 0px;
+		padding-bottom: 10px;
+		display: flex;
+		justify-content:center;
+	}
+	
+	div.profile img{
+		margin-left: 0px;
+		margin-right: 15px
+	}
+	
+	div.profile p{
+		padding-bottom: 0px;
+		padding-right: 15px;
+		text-align: left;
+	}
+	
+	div.profile form{
+		float: left;
+	}
+
+	div.form_popup {
+		display: none;
+		max-width: 400px;
+		height: 420px;
+		top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+}
