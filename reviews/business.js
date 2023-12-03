@@ -81,7 +81,7 @@ function initPage(){
 		var img = document.getElementById('mapImage');
 		var encodedAddress = encodeURIComponent(place.formatted_address);
 
-		img.src = 'https://maps.googleapis.com/maps/api/staticmap?center=' + encodedAddress + '&zoom=14&size=400x400&maptype=roadmap&markers=' + place.formatted_address + '&key=AIzaSyBZUlxtqrpZc8kvsWc0gl5W0LD4--d3y78';
+		img.src = 'https://maps.googleapis.com/maps/api/staticmap?center=' + encodedAddress + '&zoom=14&size=400x400&maptype=roadmap&markers=' + place.formatted_address + '&key={//Enter API Key here}';
 
 	  }
 	});
